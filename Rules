@@ -16,7 +16,7 @@ Compass.add_project_configuration('config.rb')
 
 compile '/styles/*/' do
   case item[:extension]
-  when 'sass'
+  when 'scss' || 'sass'
     filter :sass, Compass.sass_engine_options
   when 'css'
     #nothing
