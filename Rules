@@ -14,7 +14,7 @@ Compass.add_project_configuration('config.rb')
 #   item, use the pattern “/about/*/”; “/about/*” will also select the parent,
 #   because “*” matches zero or more characters.
 
-compile '/stylz/*/' do
+compile '/styles/*/' do
   case item[:extension]
   when 'sass'
     filter :sass, Compass.sass_engine_options
@@ -39,7 +39,7 @@ compile '*' do
   layout 'default' unless item[:layout] == 'none'
 end
 
-route '/stylz/*/' do
+route '/styles/*/' do
   item.identifier.chop + '.css'
 end
 

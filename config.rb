@@ -2,8 +2,8 @@
 
 # Set this to the root of your project when deployed:
 http_path = "/"
-css_dir = "output/stylz"
-sass_dir = "content/stylz"
+css_dir = "output/styles"
+sass_dir = "content/styles"
 images_dir = "output/images"
 javascripts_dir = "output/javascripts"
 
